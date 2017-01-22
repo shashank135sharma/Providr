@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		981E045E1E3341A200E7C168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981E045D1E3341A200E7C168 /* AppDelegate.swift */; };
-		981E04601E3341A200E7C168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981E045F1E3341A200E7C168 /* ViewController.swift */; };
 		981E04631E3341A200E7C168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981E04611E3341A200E7C168 /* Main.storyboard */; };
 		981E04661E3341A200E7C168 /* ProvidR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 981E04641E3341A200E7C168 /* ProvidR.xcdatamodeld */; };
 		981E04681E3341A200E7C168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981E04671E3341A200E7C168 /* Assets.xcassets */; };
 		981E046B1E3341A200E7C168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981E04691E3341A200E7C168 /* LaunchScreen.storyboard */; };
 		981E04761E3341A200E7C168 /* ProvidRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981E04751E3341A200E7C168 /* ProvidRTests.swift */; };
 		981E04811E3341A200E7C168 /* ProvidRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981E04801E3341A200E7C168 /* ProvidRUITests.swift */; };
+		98522A581E3409D600BFBDBD /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98522A571E3409D600BFBDBD /* SocketIO.framework */; };
+		98522A591E3417DD00BFBDBD /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98522A571E3409D600BFBDBD /* SocketIO.framework */; };
+		98522A5A1E3417DD00BFBDBD /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98522A571E3409D600BFBDBD /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98522A5E1E341C2000BFBDBD /* Pantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A5D1E341C2000BFBDBD /* Pantry.swift */; };
+		98522A601E341C3200BFBDBD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A5F1E341C3200BFBDBD /* user.swift */; };
 		988F66DE1E334E5E00F09379 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66DD1E334E5E00F09379 /* LogInViewController.swift */; };
 		988F66E11E33B3C400F09379 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E01E33B3C400F09379 /* RegistrationViewController.swift */; };
 		988F66E51E33C1EE00F09379 /* PantryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E41E33C1EE00F09379 /* PantryListTableViewController.swift */; };
 		988F66E71E33C1FE00F09379 /* PantryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E61E33C1FE00F09379 /* PantryListTableViewCell.swift */; };
 		988F66E91E33C7F600F09379 /* PantryListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E81E33C7F600F09379 /* PantryListNavigationController.swift */; };
-		988F66EB1E33FDB800F09379 /* ServerDataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66EA1E33FDB800F09379 /* ServerDataManagement.swift */; };
+		988F66EB1E33FDB800F09379 /* userDefaultClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66EA1E33FDB800F09379 /* userDefaultClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +44,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		98522A5B1E3417DD00BFBDBD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				98522A5A1E3417DD00BFBDBD /* SocketIO.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		981E045A1E3341A200E7C168 /* ProvidR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProvidR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		981E045D1E3341A200E7C168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		981E045F1E3341A200E7C168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		981E04621E3341A200E7C168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		981E04651E3341A200E7C168 /* ProvidR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProvidR.xcdatamodel; sourceTree = "<group>"; };
 		981E04671E3341A200E7C168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,12 +72,15 @@
 		981E047C1E3341A200E7C168 /* ProvidRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProvidRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		981E04801E3341A200E7C168 /* ProvidRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidRUITests.swift; sourceTree = "<group>"; };
 		981E04821E3341A200E7C168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98522A571E3409D600BFBDBD /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
+		98522A5D1E341C2000BFBDBD /* Pantry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pantry.swift; sourceTree = "<group>"; };
+		98522A5F1E341C3200BFBDBD /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		988F66DD1E334E5E00F09379 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		988F66E01E33B3C400F09379 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		988F66E41E33C1EE00F09379 /* PantryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryListTableViewController.swift; sourceTree = "<group>"; };
 		988F66E61E33C1FE00F09379 /* PantryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryListTableViewCell.swift; sourceTree = "<group>"; };
 		988F66E81E33C7F600F09379 /* PantryListNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryListNavigationController.swift; sourceTree = "<group>"; };
-		988F66EA1E33FDB800F09379 /* ServerDataManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerDataManagement.swift; sourceTree = "<group>"; };
+		988F66EA1E33FDB800F09379 /* userDefaultClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userDefaultClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98522A581E3409D600BFBDBD /* SocketIO.framework in Frameworks */,
+				98522A591E3417DD00BFBDBD /* SocketIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +117,7 @@
 				981E04741E3341A200E7C168 /* ProvidRTests */,
 				981E047F1E3341A200E7C168 /* ProvidRUITests */,
 				981E045B1E3341A200E7C168 /* Products */,
+				98522A561E3409D600BFBDBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,16 +134,15 @@
 		981E045C1E3341A200E7C168 /* ProvidR */ = {
 			isa = PBXGroup;
 			children = (
+				98522A5C1E341C1300BFBDBD /* PantryModel */,
 				988F66E31E33C1D000F09379 /* PantryListTableViewController */,
 				988F66DF1E33AA1100F09379 /* View Controllers */,
 				981E045D1E3341A200E7C168 /* AppDelegate.swift */,
-				981E045F1E3341A200E7C168 /* ViewController.swift */,
+				981E04691E3341A200E7C168 /* LaunchScreen.storyboard */,
 				981E04611E3341A200E7C168 /* Main.storyboard */,
 				981E04671E3341A200E7C168 /* Assets.xcassets */,
-				981E04691E3341A200E7C168 /* LaunchScreen.storyboard */,
 				981E046C1E3341A200E7C168 /* Info.plist */,
 				981E04641E3341A200E7C168 /* ProvidR.xcdatamodeld */,
-				988F66EA1E33FDB800F09379 /* ServerDataManagement.swift */,
 			);
 			path = ProvidR;
 			sourceTree = "<group>";
@@ -141,6 +163,24 @@
 				981E04821E3341A200E7C168 /* Info.plist */,
 			);
 			path = ProvidRUITests;
+			sourceTree = "<group>";
+		};
+		98522A561E3409D600BFBDBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98522A571E3409D600BFBDBD /* SocketIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98522A5C1E341C1300BFBDBD /* PantryModel */ = {
+			isa = PBXGroup;
+			children = (
+				988F66EA1E33FDB800F09379 /* userDefaultClass.swift */,
+				98522A5D1E341C2000BFBDBD /* Pantry.swift */,
+				98522A5F1E341C3200BFBDBD /* user.swift */,
+			);
+			name = PantryModel;
 			sourceTree = "<group>";
 		};
 		988F66DF1E33AA1100F09379 /* View Controllers */ = {
@@ -172,6 +212,7 @@
 				981E04561E3341A200E7C168 /* Sources */,
 				981E04571E3341A200E7C168 /* Frameworks */,
 				981E04581E3341A200E7C168 /* Resources */,
+				98522A5B1E3417DD00BFBDBD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,10 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98522A601E341C3200BFBDBD /* user.swift in Sources */,
 				988F66DE1E334E5E00F09379 /* LogInViewController.swift in Sources */,
 				988F66E51E33C1EE00F09379 /* PantryListTableViewController.swift in Sources */,
-				981E04601E3341A200E7C168 /* ViewController.swift in Sources */,
-				988F66EB1E33FDB800F09379 /* ServerDataManagement.swift in Sources */,
+				988F66EB1E33FDB800F09379 /* userDefaultClass.swift in Sources */,
+				98522A5E1E341C2000BFBDBD /* Pantry.swift in Sources */,
 				988F66E71E33C1FE00F09379 /* PantryListTableViewCell.swift in Sources */,
 				981E045E1E3341A200E7C168 /* AppDelegate.swift in Sources */,
 				988F66E91E33C7F600F09379 /* PantryListNavigationController.swift in Sources */,
@@ -458,6 +500,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2J36W3NEML;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ProvidR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.ProvidR;
@@ -471,6 +517,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2J36W3NEML;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ProvidR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.ProvidR;

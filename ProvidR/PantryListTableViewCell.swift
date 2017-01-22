@@ -24,7 +24,7 @@ class PantryListTableViewCell: UITableViewCell {
         addressTwoLabel.text = adTwo;
         addressLabel.text = adOne;
         pantryNameLabel.text = pantryName;
-        distanceTravelled.text = "\((distance as NSString).doubleValue) miles";
+        distanceTravelled.text = "\(distance) miles";
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
