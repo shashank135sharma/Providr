@@ -10,6 +10,7 @@ import UIKit
 
 class WishlistTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var foodLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +20,10 @@ class WishlistTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setUpCell(foodName: String) {
+        foodLabel.text = foodName;
     }
 
 }

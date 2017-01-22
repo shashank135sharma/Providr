@@ -11,7 +11,10 @@ import UIKit
 class WishlistTableViewController: UITableViewController {
 
     override func viewDidLoad() {
+        tableView.reloadData();
         super.viewDidLoad()
+       //self.tableView.contentInset = UIEdgeInsetsMake(44,0,0,0);
+        self.navigationController?.navigationBar.isHidden = false;
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +32,22 @@ class WishlistTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1;
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return DataSingleton.sharedInstance.currentUser.listOfFoods.count;
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WishlistCell", for: indexPath) as! WishlistTableViewCell
 
+        cell.setUpCell(foodName: DataSingleton.sharedInstance.currentUser.listOfFoods[indexPath.row]);
         // Configure the cell...
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

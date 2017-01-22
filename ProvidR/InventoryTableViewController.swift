@@ -11,6 +11,7 @@ import UIKit
 class InventoryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
+        self.navigationController?.isNavigationBarHidden = false;
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -18,6 +19,11 @@ class InventoryTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 90;//Choose your custom row height
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,8 +46,8 @@ class InventoryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InventoryCell", for: indexPath) as! InventoryTableViewCell;
-        
 
+        cell.setUpCell(foodName: "", quantity: 1);
         // Configure the cell...
 
         return cell

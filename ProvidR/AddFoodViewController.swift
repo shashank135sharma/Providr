@@ -1,17 +1,28 @@
 //
-//  PantryTabBar.swift
+//  AddFoodViewController.swift
 //  ProvidR
 //
-//  Created by Shashank Sharma on 1/21/17.
+//  Created by Shashank Sharma on 1/22/17.
 //  Copyright © 2017 Providr. All rights reserved.
 //
 
 import UIKit
 
-class PantryTabBar: UITabBarController {
+class AddFoodViewController: UIViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        DataSingleton.sharedInstance.user1.listOfFoods.append(foodField.text!);
+        print("Count: \(DataSingleton.sharedInstance.user1.listOfFoods.count)");
+    }
+    
+    @IBOutlet weak var foodField: UITextField!
+    @IBAction func doneButton(_ sender: Any) {
+        //performSegue(withIdentifier: "addFoodSegue", sender: self)
+    }
 
+    
     override func viewDidLoad() {
-        self.navigationController?.isNavigationBarHidden = false;
+        self.navigationController?.navigationBar.tintColor = UIColor.init(red: 255/255, green: 89/255, blue: 100/255, alpha: 1)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

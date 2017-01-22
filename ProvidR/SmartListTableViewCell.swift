@@ -25,7 +25,7 @@ class SmartListTableViewCell: UITableViewCell {
     }
     
     func setUpCell(foodName: String, quantity: Int) {
-        FoodNameLabel.text = "BlackBeans";
+        FoodNameLabel.text = "Popcorn";
        quantityTextField.text = "798";
         
         //FoodNameLabel.text = foodName;
