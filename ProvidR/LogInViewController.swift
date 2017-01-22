@@ -8,12 +8,15 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
+    
     override func viewDidLoad() {
+        self.usernameField.delegate = self;
+        self.passwordField.delegate = self;
         logInButton.layer.cornerRadius = 10;
         logInButton.clipsToBounds = true;
         
@@ -23,6 +26,13 @@ class LogInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        textField.resignFirstResponder()
+        return true;
+    }
+
     
     @IBAction func logInButtonAction(_ sender: Any) {
         if(usernameField.text!.lowercased() == "pantry") {
