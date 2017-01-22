@@ -1,5 +1,5 @@
 //
-//  PantryListTableViewController.swift
+//  SmartListTableViewController.swift
 //  ProvidR
 //
 //  Created by Shashank Sharma on 1/21/17.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class PantryListTableViewController: UITableViewController {
-    
+class SmartListTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,33 +29,24 @@ class PantryListTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 1;
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        let pantriesList = DataSingleton.sharedInstance.pantries;
-        return pantriesList.count;
+        return 1;
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let pantriesList = DataSingleton.sharedInstance.pantries;
-        let curr = pantriesList[indexPath.row];
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SmartListCell", for: indexPath) as! SmartListTableViewCell;
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PantryListCell", for: indexPath) as! PantryListTableViewCell;
-        
-        cell.setUpCell(pantryName: curr.pantryName, adOne: curr.add1, adTwo: curr.add2, distance: curr.distance.description);
+
         // Configure the cell...
 
         return cell
     }
 
-    override  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        DataSingleton.sharedInstance.currentPantry = DataSingleton.sharedInstance.pantries[indexPath.row];
-        performSegue(withIdentifier: "WishListSegue", sender: self);
-    }
-
-    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

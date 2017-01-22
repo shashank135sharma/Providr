@@ -9,9 +9,12 @@
 import Foundation
 import SocketIO
 
-
-public class userDefaultClass {
-    let defaults = UserDefaults.standard;
+private let sharedUser = DataSingleton();
+public class DataSingleton {
+    class var sharedInstance: DataSingleton {
+        return sharedUser;
+    }
+    
     var currentPantry: Pantry;
     
     var pantry1 = Pantry.init(name: "St. Francis Inn Ministries", add1: "2441 Kensington Ave.", add2: "Philadelphia, PA - 19125", distance: 6.1);
@@ -19,6 +22,8 @@ public class userDefaultClass {
     var pantry3 = Pantry.init(name: "St. Peter's Food Cupboard", add1: "313 Pine St", add2: "Philadelphia, PA - 19106", distance: 3.9);
     var pantry4 = Pantry.init(name: "North Light Community Center", add1: "175 Green Lane", add2: "Philadelphia, PA - 19127", distance: 7.8);
     var pantry5 = Pantry.init(name: "Mary Jane Home Enrichment Center", add1: "1622 Ridge Ave", add2: "Philadelphia, PA - 19130", distance: 2.5);
+    var pantry6 = Pantry.init(name: "Share Food Program Inc", add1: "2901 W Hunting Park Ave", add2: "Philadelphia, PA 19129", distance: 5.2);
+    
     
     var pantries = [Pantry]();
     var key = "CurrentPantry";
@@ -30,6 +35,7 @@ public class userDefaultClass {
         pantries.append(pantry3);
         pantries.append(pantry4);
         pantries.append(pantry5);
+        pantries.append(pantry6);
         //defaults.set(pantries, forKey: "pantriesList");
         currentPantry = pantry1;
     }
@@ -37,6 +43,5 @@ public class userDefaultClass {
     func cellWasTouched(atIndex: Int) {
         self.currentPantry = pantries.remove(at: atIndex);
         pantries.append(self.currentPantry);
-        defaults.set(currentPantry, forKey: "CurrentPantry");
     }
 }

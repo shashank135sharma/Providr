@@ -19,12 +19,19 @@
 		98522A5A1E3417DD00BFBDBD /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98522A571E3409D600BFBDBD /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		98522A5E1E341C2000BFBDBD /* Pantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A5D1E341C2000BFBDBD /* Pantry.swift */; };
 		98522A601E341C3200BFBDBD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A5F1E341C3200BFBDBD /* user.swift */; };
+		98522A621E344B6200BFBDBD /* PantryTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A611E344B6200BFBDBD /* PantryTabBar.swift */; };
+		98522A671E344EC400BFBDBD /* InventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A661E344EC400BFBDBD /* InventoryTableViewCell.swift */; };
+		98522A691E3451D200BFBDBD /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A681E3451D200BFBDBD /* InventoryTableViewController.swift */; };
+		98522A6C1E34528500BFBDBD /* SmartListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A6B1E34528500BFBDBD /* SmartListTableViewController.swift */; };
+		98522A6E1E3452A300BFBDBD /* SmartListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A6D1E3452A300BFBDBD /* SmartListTableViewCell.swift */; };
+		98522A711E345DCB00BFBDBD /* WishlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A701E345DCB00BFBDBD /* WishlistTableViewController.swift */; };
+		98522A731E345DFC00BFBDBD /* WishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A721E345DFC00BFBDBD /* WishlistTableViewCell.swift */; };
 		988F66DE1E334E5E00F09379 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66DD1E334E5E00F09379 /* LogInViewController.swift */; };
 		988F66E11E33B3C400F09379 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E01E33B3C400F09379 /* RegistrationViewController.swift */; };
 		988F66E51E33C1EE00F09379 /* PantryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E41E33C1EE00F09379 /* PantryListTableViewController.swift */; };
 		988F66E71E33C1FE00F09379 /* PantryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E61E33C1FE00F09379 /* PantryListTableViewCell.swift */; };
 		988F66E91E33C7F600F09379 /* PantryListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E81E33C7F600F09379 /* PantryListNavigationController.swift */; };
-		988F66EB1E33FDB800F09379 /* userDefaultClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66EA1E33FDB800F09379 /* userDefaultClass.swift */; };
+		988F66EB1E33FDB800F09379 /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66EA1E33FDB800F09379 /* DataSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,12 +82,19 @@
 		98522A571E3409D600BFBDBD /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
 		98522A5D1E341C2000BFBDBD /* Pantry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pantry.swift; sourceTree = "<group>"; };
 		98522A5F1E341C3200BFBDBD /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		98522A611E344B6200BFBDBD /* PantryTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryTabBar.swift; sourceTree = "<group>"; };
+		98522A661E344EC400BFBDBD /* InventoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTableViewCell.swift; sourceTree = "<group>"; };
+		98522A681E3451D200BFBDBD /* InventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
+		98522A6B1E34528500BFBDBD /* SmartListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartListTableViewController.swift; sourceTree = "<group>"; };
+		98522A6D1E3452A300BFBDBD /* SmartListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartListTableViewCell.swift; sourceTree = "<group>"; };
+		98522A701E345DCB00BFBDBD /* WishlistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistTableViewController.swift; sourceTree = "<group>"; };
+		98522A721E345DFC00BFBDBD /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
 		988F66DD1E334E5E00F09379 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		988F66E01E33B3C400F09379 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		988F66E41E33C1EE00F09379 /* PantryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryListTableViewController.swift; sourceTree = "<group>"; };
 		988F66E61E33C1FE00F09379 /* PantryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryListTableViewCell.swift; sourceTree = "<group>"; };
 		988F66E81E33C7F600F09379 /* PantryListNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryListNavigationController.swift; sourceTree = "<group>"; };
-		988F66EA1E33FDB800F09379 /* userDefaultClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userDefaultClass.swift; sourceTree = "<group>"; };
+		988F66EA1E33FDB800F09379 /* DataSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +148,9 @@
 		981E045C1E3341A200E7C168 /* ProvidR */ = {
 			isa = PBXGroup;
 			children = (
+				98522A6F1E345DB600BFBDBD /* WishListTableViewController */,
+				98522A6A1E34525F00BFBDBD /* SmartListTableView */,
+				98522A631E344E7F00BFBDBD /* InventoryTableView */,
 				98522A5C1E341C1300BFBDBD /* PantryModel */,
 				988F66E31E33C1D000F09379 /* PantryListTableViewController */,
 				988F66DF1E33AA1100F09379 /* View Controllers */,
@@ -176,11 +193,38 @@
 		98522A5C1E341C1300BFBDBD /* PantryModel */ = {
 			isa = PBXGroup;
 			children = (
-				988F66EA1E33FDB800F09379 /* userDefaultClass.swift */,
+				988F66EA1E33FDB800F09379 /* DataSingleton.swift */,
 				98522A5D1E341C2000BFBDBD /* Pantry.swift */,
 				98522A5F1E341C3200BFBDBD /* user.swift */,
 			);
 			name = PantryModel;
+			sourceTree = "<group>";
+		};
+		98522A631E344E7F00BFBDBD /* InventoryTableView */ = {
+			isa = PBXGroup;
+			children = (
+				98522A661E344EC400BFBDBD /* InventoryTableViewCell.swift */,
+				98522A681E3451D200BFBDBD /* InventoryTableViewController.swift */,
+			);
+			name = InventoryTableView;
+			sourceTree = "<group>";
+		};
+		98522A6A1E34525F00BFBDBD /* SmartListTableView */ = {
+			isa = PBXGroup;
+			children = (
+				98522A6B1E34528500BFBDBD /* SmartListTableViewController.swift */,
+				98522A6D1E3452A300BFBDBD /* SmartListTableViewCell.swift */,
+			);
+			name = SmartListTableView;
+			sourceTree = "<group>";
+		};
+		98522A6F1E345DB600BFBDBD /* WishListTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98522A701E345DCB00BFBDBD /* WishlistTableViewController.swift */,
+				98522A721E345DFC00BFBDBD /* WishlistTableViewCell.swift */,
+			);
+			name = WishListTableViewController;
 			sourceTree = "<group>";
 		};
 		988F66DF1E33AA1100F09379 /* View Controllers */ = {
@@ -188,6 +232,7 @@
 			children = (
 				988F66DD1E334E5E00F09379 /* LogInViewController.swift */,
 				988F66E01E33B3C400F09379 /* RegistrationViewController.swift */,
+				98522A611E344B6200BFBDBD /* PantryTabBar.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -340,15 +385,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98522A691E3451D200BFBDBD /* InventoryTableViewController.swift in Sources */,
 				98522A601E341C3200BFBDBD /* user.swift in Sources */,
 				988F66DE1E334E5E00F09379 /* LogInViewController.swift in Sources */,
 				988F66E51E33C1EE00F09379 /* PantryListTableViewController.swift in Sources */,
-				988F66EB1E33FDB800F09379 /* userDefaultClass.swift in Sources */,
+				98522A621E344B6200BFBDBD /* PantryTabBar.swift in Sources */,
+				98522A6E1E3452A300BFBDBD /* SmartListTableViewCell.swift in Sources */,
+				988F66EB1E33FDB800F09379 /* DataSingleton.swift in Sources */,
 				98522A5E1E341C2000BFBDBD /* Pantry.swift in Sources */,
+				98522A6C1E34528500BFBDBD /* SmartListTableViewController.swift in Sources */,
 				988F66E71E33C1FE00F09379 /* PantryListTableViewCell.swift in Sources */,
 				981E045E1E3341A200E7C168 /* AppDelegate.swift in Sources */,
 				988F66E91E33C7F600F09379 /* PantryListNavigationController.swift in Sources */,
 				981E04661E3341A200E7C168 /* ProvidR.xcdatamodeld in Sources */,
+				98522A731E345DFC00BFBDBD /* WishlistTableViewCell.swift in Sources */,
+				98522A671E344EC400BFBDBD /* InventoryTableViewCell.swift in Sources */,
+				98522A711E345DCB00BFBDBD /* WishlistTableViewController.swift in Sources */,
 				988F66E11E33B3C400F09379 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
