@@ -28,6 +28,4 @@ class user {
     func userRequestedFood() {
         
     }
-    
-    
 }

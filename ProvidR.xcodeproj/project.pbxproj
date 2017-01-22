@@ -193,9 +193,9 @@
 		98522A5C1E341C1300BFBDBD /* PantryModel */ = {
 			isa = PBXGroup;
 			children = (
+				98522A5F1E341C3200BFBDBD /* user.swift */,
 				988F66EA1E33FDB800F09379 /* DataSingleton.swift */,
 				98522A5D1E341C2000BFBDBD /* Pantry.swift */,
-				98522A5F1E341C3200BFBDBD /* user.swift */,
 			);
 			name = PantryModel;
 			sourceTree = "<group>";
