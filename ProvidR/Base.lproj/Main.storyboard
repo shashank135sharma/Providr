@@ -242,6 +242,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.41568627450980389" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -251,6 +252,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Wishlist" id="pCI-zv-XAe">
                         <barButtonItem key="leftBarButtonItem" image="Back" id="zEv-I3-9vO">
+                            <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="10X-O4-2DQ">
                             <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
