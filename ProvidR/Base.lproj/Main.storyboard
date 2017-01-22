@@ -109,7 +109,7 @@
                         <outlet property="usernameField" destination="RaO-W8-ecv" id="W9V-dt-nvO"/>
                         <segue destination="PER-gX-cAt" kind="showDetail" identifier="registrationSegue" id="iqR-Ni-Gkt"/>
                         <segue destination="npv-ZE-NG7" kind="presentation" identifier="usersSegue" id="XJy-6g-NFB"/>
-                        <segue destination="Vr9-dC-mTR" kind="presentation" identifier="pantrySegue" id="uNY-UT-cJ7"/>
+                        <segue destination="Zr8-kt-EFa" kind="presentation" identifier="pantrySegue" id="Gob-9v-VGB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -653,6 +653,9 @@
                     <navigationItem key="navigationItem" title="Add an Item to Inventory" id="Z97-Gn-zmM">
                         <barButtonItem key="leftBarButtonItem" image="Back" id="SUM-SK-mzQ">
                             <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="A4I-5N-mwX" kind="showDetail" id="2wF-Dn-4fT"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="UpL-UT-Sh4">
                             <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -670,24 +673,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9E-ek-7QZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5629.6000000000004" y="567.16641679160421"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Z0O-zK-iHS">
-            <objects>
-                <viewController id="Vr9-dC-mTR" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lhW-Kj-nob"/>
-                        <viewControllerLayoutGuide type="bottom" id="G0V-yg-PjS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cCv-wX-AFU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WDR-DO-xNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="62" y="581"/>
         </scene>
         <!--Pantry Tab Bar-->
         <scene sceneID="9Av-E0-VKv">
