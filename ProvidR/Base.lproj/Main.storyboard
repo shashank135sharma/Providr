@@ -253,6 +253,9 @@
                     <navigationItem key="navigationItem" title="Wishlist" id="pCI-zv-XAe">
                         <barButtonItem key="leftBarButtonItem" image="Back" id="zEv-I3-9vO">
                             <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="MCj-Kw-j8L" kind="presentation" id="HFm-uN-lVC"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="10X-O4-2DQ">
                             <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -730,5 +733,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ase-21-THc"/>
+        <segue reference="HFm-uN-lVC"/>
     </inferredMetricsTieBreakers>
 </document>
