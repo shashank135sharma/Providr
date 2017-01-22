@@ -30,7 +30,7 @@ public class userDefaultClass {
         pantries.append(pantry3);
         pantries.append(pantry4);
         pantries.append(pantry5);
-        defaults.set(pantries, forKey: "pantriesList");
+        //defaults.set(pantries, forKey: "pantriesList");
         currentPantry = pantry1;
     }
     

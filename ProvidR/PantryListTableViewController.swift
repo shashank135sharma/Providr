@@ -10,10 +10,9 @@ import UIKit
 
 class PantryListTableViewController: UITableViewController {
     
-    var defaults = UserDefaults.standard;
+    var defaults = userDefaultClass.init();
     
     override func viewDidLoad() {
-        var def = userDefaultClass.init();
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -37,12 +36,12 @@ class PantryListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        let pantriesList = self.defaults.array(forKey: "pantries");
-        return pantriesList!.count;
+        let pantriesList = defaults.pantries;
+        return pantriesList.count;
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let pantriesList = self.defaults.array(forKey: "pantriesList") as! [Pantry];
+        let pantriesList = defaults.pantries;
         var curr = pantriesList[indexPath.row];
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PantryListCell", for: indexPath) as! PantryListTableViewCell;
