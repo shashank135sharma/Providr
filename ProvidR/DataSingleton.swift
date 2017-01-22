@@ -17,6 +17,30 @@ public class DataSingleton {
     
     var currentPantry: Pantry;
     var currentUser: user;
+    var ethnicities: [String: Int];
+    var inventory = [String: Int]();
+    var SmartList = [String: Int]();
+    var foodTypes = ["Tomato", "Patato", "Black Beans", "White Rice", "Whole Flour", "Banana", "Brown Rice", "White Flour", "Whole Grain Pasta", "Chocolate", "Salt", "Cumin", "Chicken", "Milk", "Cheese", "Eggs"]
+    
+    var smartList = [
+        "Tomato" : 1343,
+        "Patato": 1560,
+        "Black Beans" : 564,
+        "White Rice" : 893,
+        "Whole Flour" : 394,
+        "Banana" : 1982,
+        "Brown Rice" : 698,
+        "White Flour" : 432,
+        "Whole Grain Pasta" : 293,
+        "Chocolate" : 698,
+        "Salt" : 1298,
+        "Cumin" : 192,
+        "Chicken" : 588,
+        "Milk" : 701,
+        "Cheese" : 349,
+        "Eggs" : 1452]
+    
+    var invenKeys = [String]();
     
     var pantry1 = Pantry.init(name: "St. Francis Inn Ministries", add1: "2441 Kensington Ave.", add2: "Philadelphia, PA - 19125", distance: 6.1);
     var pantry2 = Pantry.init(name: "Philabundance", add1: "3616 S Galloway Street", add2: "Philadelphia, PA - 19148", distance: 5.6);
@@ -142,11 +166,42 @@ public class DataSingleton {
         currentPantry.users.append(user49);
         currentPantry.users.append(user50);
         //defaults.set(pantries, forKey: "pantriesList");
+        ethnicities = [String: Int]();
+        SmartList = [String: Int]();
+        updateEthnicityArray();
 
+        inventory = [
+            "Black Beans" : 784,
+            "Tomatoes": 985,
+            "Milk" : 1232,
+            "Potatoes": 932
+        ]
+        
+        invenKeys = [
+        "Black Beans",
+        "Tomatoes",
+        "Milk",
+        "Potatoes"
+        ]
     }
     
-    func cellWasTouched(atIndex: Int) {
-        self.currentPantry = pantries.remove(at: atIndex);
-        pantries.append(self.currentPantry);
+    
+    func updateEthnicityArray() {
+        for user in currentPantry.users {
+            if(ethnicities.keys.contains(user.etnicity)) {
+                ethnicities[user.etnicity] = ethnicities[user.etnicity]! + 1;
+            } else {
+                ethnicities[user.etnicity] = 0;
+            }
+        }
     }
+    
+    func getEthnicityFoodData() {
+        
+    }
+    
+    func getSmartList() {
+        
+    }
+    
 }

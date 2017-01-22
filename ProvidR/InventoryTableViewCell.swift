@@ -26,9 +26,8 @@ class InventoryTableViewCell: UITableViewCell {
     }
     
     func setUpCell(foodName: String, quantity: Int) {
-        foodNameLabel.text = "Black Beans";
-        numTextField.text = "782";
-        //numTextField.text = "\(quantity)";
+        foodNameLabel.text = foodName;
+        numTextField.text = "\(quantity)";
     }
 
 }

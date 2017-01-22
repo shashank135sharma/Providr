@@ -109,7 +109,7 @@
                         <outlet property="usernameField" destination="RaO-W8-ecv" id="W9V-dt-nvO"/>
                         <segue destination="PER-gX-cAt" kind="showDetail" identifier="registrationSegue" id="iqR-Ni-Gkt"/>
                         <segue destination="npv-ZE-NG7" kind="presentation" identifier="usersSegue" id="XJy-6g-NFB"/>
-                        <segue destination="Zr8-kt-EFa" kind="presentation" identifier="pantrySegue" id="Gd1-Cz-hkr"/>
+                        <segue destination="Vr9-dC-mTR" kind="presentation" identifier="pantrySegue" id="uNY-UT-cJ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -423,7 +423,7 @@
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aO4-3P-p9X">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carrot" translatesAutoresizingMaskIntoConstraints="NO" id="aO4-3P-p9X">
                                             <rect key="frame" x="22" y="19" width="32" height="51"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="32" id="emC-9h-3Ns"/>
@@ -458,6 +458,9 @@
                     <navigationItem key="navigationItem" title="Smart List" id="yDo-ni-ycQ">
                         <barButtonItem key="leftBarButtonItem" image="Back" id="hei-ia-awC">
                             <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="buH-IW-gt7"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -557,12 +560,134 @@
                                 <segue destination="BYZ-38-t0r" kind="presentation" id="xlU-jd-qCi"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Que-dd-HZ6">
+                            <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="gu6-Es-l06" kind="show" id="pNW-6P-Kje"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYP-Ux-ukT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4628" y="568.06596701649175"/>
+        </scene>
+        <!--Add an Item to Inventory-->
+        <scene sceneID="27O-w8-eVS">
+            <objects>
+                <viewController id="gu6-Es-l06" customClass="AddItemViewController" customModule="ProvidR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iYW-v3-mfe"/>
+                        <viewControllerLayoutGuide type="bottom" id="5OX-qa-cJL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t2X-RD-BDY">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Black Beans" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnW-U0-abo">
+                                <rect key="frame" x="66" y="230" width="242" height="30"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.41568627450000001" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="aVB-Kf-qHd"/>
+                                    <constraint firstAttribute="height" constant="30" id="hGs-1A-88v"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1200" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmv-rY-gDm">
+                                <rect key="frame" x="66" y="311" width="242" height="30"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.41568627450000001" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="EZO-k2-qxS"/>
+                                    <constraint firstAttribute="height" constant="30" id="PuN-KD-RuC"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EA8-7X-Gf8">
+                                <rect key="frame" x="152" y="275" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="hlx-uN-rJM"/>
+                                    <constraint firstAttribute="height" constant="21" id="ycT-5e-Fr1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Item to Add:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQY-e1-bep">
+                                <rect key="frame" x="112" y="194" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="K0G-Ep-he0"/>
+                                    <constraint firstAttribute="width" constant="150" id="x1q-S8-WUi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34901960780000002" green="0.27450980390000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hQY-e1-bep" firstAttribute="centerX" secondItem="t2X-RD-BDY" secondAttribute="centerX" id="056-C3-kEH"/>
+                            <constraint firstItem="fmv-rY-gDm" firstAttribute="centerX" secondItem="t2X-RD-BDY" secondAttribute="centerX" id="3WA-DA-saP"/>
+                            <constraint firstItem="nnW-U0-abo" firstAttribute="top" secondItem="hQY-e1-bep" secondAttribute="bottom" constant="15" id="ENY-ws-y3g"/>
+                            <constraint firstItem="nnW-U0-abo" firstAttribute="centerX" secondItem="t2X-RD-BDY" secondAttribute="centerX" id="QWV-yt-Xg7"/>
+                            <constraint firstItem="EA8-7X-Gf8" firstAttribute="top" secondItem="nnW-U0-abo" secondAttribute="bottom" constant="15" id="d8C-rw-9aS"/>
+                            <constraint firstItem="fmv-rY-gDm" firstAttribute="top" secondItem="EA8-7X-Gf8" secondAttribute="bottom" constant="15" id="hdz-04-ik2"/>
+                            <constraint firstItem="hQY-e1-bep" firstAttribute="top" secondItem="iYW-v3-mfe" secondAttribute="bottom" constant="194" id="qdW-GQ-COf"/>
+                            <constraint firstItem="EA8-7X-Gf8" firstAttribute="centerX" secondItem="t2X-RD-BDY" secondAttribute="centerX" id="u67-Hu-ebE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add an Item to Inventory" id="Z97-Gn-zmM">
+                        <barButtonItem key="leftBarButtonItem" image="Back" id="SUM-SK-mzQ">
+                            <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="UpL-UT-Sh4">
+                            <color key="tintColor" red="1" green="0.35294117650000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="A4I-5N-mwX" kind="presentation" identifier="inventorySegue" id="QZ5-kS-pnb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="nameField" destination="nnW-U0-abo" id="hlh-AA-B7p"/>
+                        <outlet property="quantityField" destination="fmv-rY-gDm" id="DEV-l9-hpn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J9E-ek-7QZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5629.6000000000004" y="567.16641679160421"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z0O-zK-iHS">
+            <objects>
+                <viewController id="Vr9-dC-mTR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lhW-Kj-nob"/>
+                        <viewControllerLayoutGuide type="bottom" id="G0V-yg-PjS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cCv-wX-AFU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDR-DO-xNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="581"/>
         </scene>
         <!--Pantry Tab Bar-->
         <scene sceneID="9Av-E0-VKv">
@@ -834,7 +959,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A4I-5N-mwX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Inventory" image="Inventory" selectedImage="Inventory Filled" id="5Oa-eD-lB5"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ahH-bW-B4p">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ahH-bW-B4p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -861,7 +987,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XJy-6g-NFB"/>
-        <segue reference="xlU-jd-qCi"/>
+        <segue reference="buH-IW-gt7"/>
         <segue reference="9mj-7e-oZr"/>
+        <segue reference="QZ5-kS-pnb"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -27,6 +27,7 @@
 		98522A711E345DCB00BFBDBD /* WishlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A701E345DCB00BFBDBD /* WishlistTableViewController.swift */; };
 		98522A731E345DFC00BFBDBD /* WishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A721E345DFC00BFBDBD /* WishlistTableViewCell.swift */; };
 		98522A761E34813800BFBDBD /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A751E34813800BFBDBD /* AddFoodViewController.swift */; };
+		98522A781E34BE7C00BFBDBD /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98522A771E34BE7C00BFBDBD /* AddItemViewController.swift */; };
 		988F66DE1E334E5E00F09379 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66DD1E334E5E00F09379 /* LogInViewController.swift */; };
 		988F66E11E33B3C400F09379 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E01E33B3C400F09379 /* RegistrationViewController.swift */; };
 		988F66E51E33C1EE00F09379 /* PantryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F66E41E33C1EE00F09379 /* PantryListTableViewController.swift */; };
@@ -91,6 +92,7 @@
 		98522A701E345DCB00BFBDBD /* WishlistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistTableViewController.swift; sourceTree = "<group>"; };
 		98522A721E345DFC00BFBDBD /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
 		98522A751E34813800BFBDBD /* AddFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodViewController.swift; sourceTree = "<group>"; };
+		98522A771E34BE7C00BFBDBD /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		988F66DD1E334E5E00F09379 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		988F66E01E33B3C400F09379 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		988F66E41E33C1EE00F09379 /* PantryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryListTableViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				98522A661E344EC400BFBDBD /* InventoryTableViewCell.swift */,
 				98522A681E3451D200BFBDBD /* InventoryTableViewController.swift */,
+				98522A771E34BE7C00BFBDBD /* AddItemViewController.swift */,
 			);
 			name = InventoryTableView;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				981E045E1E3341A200E7C168 /* AppDelegate.swift in Sources */,
 				988F66E91E33C7F600F09379 /* PantryListNavigationController.swift in Sources */,
 				981E04661E3341A200E7C168 /* ProvidR.xcdatamodeld in Sources */,
+				98522A781E34BE7C00BFBDBD /* AddItemViewController.swift in Sources */,
 				98522A731E345DFC00BFBDBD /* WishlistTableViewCell.swift in Sources */,
 				98522A671E344EC400BFBDBD /* InventoryTableViewCell.swift in Sources */,
 				98522A711E345DCB00BFBDBD /* WishlistTableViewController.swift in Sources */,

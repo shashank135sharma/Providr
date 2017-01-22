@@ -12,7 +12,9 @@ class InventoryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         self.navigationController?.isNavigationBarHidden = false;
+        self.tableView.reloadData();
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -40,14 +42,15 @@ class InventoryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1;
+        return DataSingleton.sharedInstance.inventory.count;
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InventoryCell", for: indexPath) as! InventoryTableViewCell;
 
-        cell.setUpCell(foodName: "", quantity: 1);
+        let currInven = DataSingleton.sharedInstance.invenKeys[indexPath.row];
+        cell.setUpCell(foodName: currInven, quantity: DataSingleton.sharedInstance.inventory[currInven]!);
         // Configure the cell...
 
         return cell

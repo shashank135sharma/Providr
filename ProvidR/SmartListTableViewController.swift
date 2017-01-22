@@ -11,6 +11,7 @@ import UIKit
 class SmartListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -39,14 +40,16 @@ class SmartListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2;
+        return DataSingleton.sharedInstance.smartList.count;
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SmartListCell", for: indexPath) as! SmartListTableViewCell;
         
-        cell.setUpCell(foodName: "", quantity: 1)
+        let name = DataSingleton.sharedInstance.foodTypes[indexPath.row];
+        
+        cell.setUpCell(foodName: name, quantity: Int(DataSingleton.sharedInstance.smartList[name]!));
 
         // Configure the cell...
 
